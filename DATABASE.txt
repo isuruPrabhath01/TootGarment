@@ -1,0 +1,16 @@
+DROP DATABASE IF EXISTS currierService;
+CREATE DATABASE IF NOT EXISTS currierService;
+SHOW DATABASES;
+USE currierService;
+
+CREATE TABLE IF NOT EXISTS Supplier(
+	supplierId VARCHAR (20) PRIMARY KEY,
+	name VARCHAR (50),
+	dob VARCHAR (25),
+	age INT,
+	email TEXT,
+	salary DOUBLE	
+);
+
+SHOW TABLES;
+DESC Supplier;

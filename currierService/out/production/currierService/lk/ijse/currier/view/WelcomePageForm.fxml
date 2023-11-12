@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="welcomeContext" onMouseClicked="#welcomeOnMouseClicked" prefHeight="700.0" prefWidth="1362.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.tootGarment.controller.WelcomePageFormController">
+   <children>
+      <Label layoutX="179.0" layoutY="287.0" text="Welcome To Currier Service" textFill="#29a437">
+         <font>
+            <Font name="System Bold" size="78.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ChangePasswordPage" prefHeight="600.0" prefWidth="1060.0" style="-fx-background-color: white;" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.tootGarment.controller.UserUpdatePageFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0099ff" height="601.0" layoutY="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="260.0">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis>
+        </Rectangle>
+        <HBox layoutX="260.0" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #0099ff;">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis>
+            <children>
+            <JFXButton onAction="#UserAddPage2OnAction" prefHeight="50.0" prefWidth="200.0" text="Add User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+                <JFXButton onAction="#ChangePasswordPageOnAction" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0984e3; -fx-border-width: 0 5 0 0; -fx-border-color: White;" text="Change Password" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </JFXButton>
+            <JFXButton onAction="#DeleteUserPageOnAction" prefHeight="50.0" prefWidth="200.0" text="Delete User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#UserListPageOnAction" prefHeight="50.0" prefWidth="200.0" text="User List" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            </children>
+        </HBox>
+      <Text layoutX="296.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Id" wrappingWidth="116.13671875" AnchorPane.leftAnchor="296.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUserName" layoutX="296.0" layoutY="175.0" mouseTransparent="true" prefHeight="25.0" prefWidth="200.0" promptText="UserName" style="-fx-border-width: 0px 0px 1px 0px; -fx-background-color: White; -fx-border-color: Black;" AnchorPane.leftAnchor="296.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text layoutX="296.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" wrappingWidth="116.13671875" AnchorPane.leftAnchor="296.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="465.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Old Password" wrappingWidth="116.13671875" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="465.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Password" wrappingWidth="116.13671875" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button focusTraversable="false" layoutX="808.0" layoutY="361.0" mnemonicParsing="false" onAction="#ChangePasswordOnAction" prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #0099FF; -fx-border-radius: 30; -fx-border-color: #0099FF; -fx-background-radius: 30;" text="Change Password" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="txtOldPassword" focusTraversable="false" layoutX="461.0" layoutY="296.0" prefHeight="25.0" prefWidth="211.0" promptText="***********" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0px 0px 1px 0px;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <PasswordField fx:id="txtNewPassword" focusTraversable="false" layoutX="461.0" layoutY="386.0" prefHeight="25.0" prefWidth="211.0" promptText="***********" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0px 0px 1px 0px;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <Text layoutX="461.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confim new Password" wrappingWidth="157.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="txtConfimPassword" focusTraversable="false" layoutX="461.0" layoutY="475.0" prefHeight="25.0" prefWidth="211.0" promptText="***********" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 0px 0px 1px 0px;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <VBox layoutX="10.0" layoutY="194.0" prefHeight="250.0" prefWidth="260.0" style="-fx-background-color: #0099FF;" stylesheets="@../css/Style.css" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="0.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#StaffAddPageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Staff" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/management.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#UserAddPageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80; -fx-background-color: #81ecec; -fx-border-width: 0 5 0 0; -fx-border-color: White;" text="Users" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/6330650_account_and_person_personal_profile_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#AttendanceStaffAddPageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Staff Attendance" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Assets" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/fixed-asset.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#LogOutOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="LogOut" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/7351030_lock_logout_exit_security_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXComboBox fx:id="cmbStaffID" layoutX="296.0" layoutY="109.0" onAction="#cmbStaffIDOnAction" prefHeight="25.0" prefWidth="139.0" promptText="StaffId" />
+    </children>
+</AnchorPane>

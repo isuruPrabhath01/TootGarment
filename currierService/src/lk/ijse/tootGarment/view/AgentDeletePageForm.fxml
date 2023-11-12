@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AgentDeletePage" prefHeight="600.0" prefWidth="1060.0" style="-fx-background-color: white;" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.tootGarment.controller.AgentDeletePageFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0099ff" height="601.0" layoutY="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="260.0">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis>
+        </Rectangle>
+        <HBox layoutX="260.0" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #0099ff;">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis>
+            <children>
+            <JFXButton onAction="#AgentAddPageOnAction" prefHeight="50.0" prefWidth="200.0" text="Add Agent" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#AgentUpdatePageOnAction" prefHeight="50.0" prefWidth="200.0" text="Update Agent Detals" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+                <JFXButton onAction="#AgentDeletePageOnAction" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0984e3; -fx-border-width: 0 5 0 0; -fx-border-color: White;" text="Delete Agent" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </JFXButton>
+            <JFXButton onAction="#AgentViewPageOnAction" prefHeight="50.0" prefWidth="200.0" text="Agent List" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            </children>
+        </HBox>
+      <TextField fx:id="txtAgentNic" layoutX="330.0" layoutY="101.0" onKeyReleased="#txtAgentNicOnAction" prefHeight="25.0" prefWidth="200.0" promptText="xxxxxxxxV / xxxxxxxxxxxx" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="101.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text layoutX="330.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC Number" wrappingWidth="116.13671875" AnchorPane.leftAnchor="330.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtAgentName" layoutX="457.0" layoutY="215.0" mouseTransparent="true" onKeyReleased="#txtAgentNameOnAction" prefHeight="25.0" prefWidth="200.0" promptText="FullName" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text layoutX="465.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="116.13671875" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="465.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company Name" wrappingWidth="116.13671875" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtAgentCompanyName" layoutX="457.0" layoutY="295.0" mouseTransparent="true" onKeyReleased="#txtAgentCompanyNameOnAction" prefHeight="25.0" prefWidth="200.0" promptText="CompanyName" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text layoutX="465.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="116.13671875" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtAgentEmail" layoutX="457.0" layoutY="385.0" mouseTransparent="true" onKeyReleased="#txtAgentEmailOnAction" prefHeight="25.0" prefWidth="200.0" promptText="xxxxxxxx@xxxmail.com/lk/uk" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text layoutX="465.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number" wrappingWidth="116.13671875" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtAgentContactNumber" layoutX="457.0" layoutY="475.0" mouseTransparent="true" onKeyReleased="#txtAgentContactNumberOnAction" prefHeight="25.0" prefWidth="200.0" promptText="07 / +xx / 0xx" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button focusTraversable="false" layoutX="841.0" layoutY="283.0" mnemonicParsing="false" onAction="#AgentDeleteOnAction" prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #ff3f34; -fx-border-radius: 30; -fx-border-color: #ff3f34; -fx-background-radius: 30;" text="Delete Agent" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button focusTraversable="false" layoutX="554.0" layoutY="86.0" mnemonicParsing="false" onAction="#AgentDeleteSearchOnAction" prefHeight="50.0" prefWidth="116.0" style="-fx-background-color: #0099FF; -fx-border-radius: 30; -fx-border-color: #0099FF; -fx-background-radius: 30;" text="Search" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button focusTraversable="false" layoutX="688.0" layoutY="86.0" mnemonicParsing="false" onAction="#ClearSearchOnAction" prefHeight="50.0" prefWidth="116.0" style="-fx-background-color: #ff3f34; -fx-border-radius: 30; -fx-border-color: #ff3f34; -fx-background-radius: 30;" text="Clear Search" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <VBox layoutX="10.0" layoutY="196.0" prefHeight="250.0" prefWidth="260.0" style="-fx-background-color: #0099FF;" stylesheets="@../css/Style.css" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="0.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#AgentMainPageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80; -fx-background-color: #81ecec; -fx-border-width: 0 5 0 0; -fx-border-color: white;" text="Agents" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/6330650_account_and_person_personal_profile_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#OrderPlacePageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Order" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/6330643_accept_check_list_lists_orders_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#StockMainPageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Stock" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/6330636_business_ecommerce_market_retail_shop_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#PaymentPlacePageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Payment" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/6330656_banknote_cash_currency_finance_money_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#LogOutPageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="LogOut" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/7351030_lock_logout_exit_security_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

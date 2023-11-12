@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="StockAddPage" prefHeight="600.0" prefWidth="1060.0" style="-fx-background-color: white;" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.tootGarment.controller.StockAddPageFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0099ff" height="601.0" layoutY="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="260.0">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis>
+        </Rectangle>
+        <HBox layoutX="260.0" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #0099ff;">
+            <rotationAxis>
+                <Point3D />
+            </rotationAxis>
+            <children>
+                <JFXButton onAction="#StockAddPageOnAction" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #0984e3; -fx-border-width: 0 5 0 0; -fx-border-color: white;" text="Add Stock" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </JFXButton>
+            <JFXButton onAction="#StockUpdatePageOnAction" prefHeight="50.0" prefWidth="200.0" text="Update Stock Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#StockClearPageOnAction" prefHeight="50.0" prefWidth="200.0" text="Clear Stock" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#StockViewPageOnAction" prefHeight="50.0" prefWidth="200.0" text="Stock View" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            </children>
+        </HBox>
+      <TextField fx:id="txtStockId" layoutX="457.0" layoutY="135.0" prefHeight="25.0" prefWidth="200.0" promptText="Sxxxxx" style="-fx-border-width: 0px 0px 1px 0px; -fx-background-color: White; -fx-border-color: Black;" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text layoutX="465.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Id" wrappingWidth="116.13671875" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="465.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Id" wrappingWidth="116.13671875" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="465.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="116.13671875" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDescription" layoutX="457.0" layoutY="295.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-width: 0px 0px 1px 0px; -fx-background-color: White; -fx-border-color: Black;" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text layoutX="465.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="116.13671875" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtType" layoutX="457.0" layoutY="385.0" prefHeight="25.0" prefWidth="200.0" promptText="StockType" style="-fx-border-width: 0px 0px 1px 0px; -fx-background-color: White; -fx-border-color: Black;" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text layoutX="465.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="116.13671875" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtQty" layoutX="457.0" layoutY="475.0" prefHeight="25.0" prefWidth="200.0" style="-fx-border-width: 0px 0px 1px 0px; -fx-background-color: White; -fx-border-color: Black;" AnchorPane.leftAnchor="460.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button focusTraversable="false" layoutX="817.0" layoutY="259.0" mnemonicParsing="false" onAction="#AddToDatabaseOnAction" prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #0099FF; -fx-border-radius: 30; -fx-border-color: #0099FF; -fx-background-radius: 30;" text="Add To Database" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button focusTraversable="false" layoutX="817.0" layoutY="349.0" mnemonicParsing="false" onAction="#ClearAllDataOnAction" prefHeight="50.0" prefWidth="157.0" style="-fx-background-color: #ff3f34; -fx-border-radius: 30; -fx-border-color: #ff3f34; -fx-background-radius: 30;" text="Clear All Data" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="759.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="116.13671875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <VBox layoutX="10.0" layoutY="185.0" prefHeight="250.0" prefWidth="260.0" style="-fx-background-color: #0099FF;" stylesheets="@../css/Style.css" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="0.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#AgentMainPageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Agents" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/6330650_account_and_person_personal_profile_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#OrderPlacePageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Order" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/6330643_accept_check_list_lists_orders_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#StockMainPageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80; -fx-background-color: #81ecec; -fx-border-width: 0 5 0 0; -fx-border-color: White;" text="Stock" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/6330636_business_ecommerce_market_retail_shop_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#PaymentPlacePageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Payment" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/6330656_banknote_cash_currency_finance_money_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#LogOutPageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="LogOut" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/7351030_lock_logout_exit_security_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXComboBox fx:id="OrderIdComboBox" layoutX="461.0" layoutY="213.0" onAction="#OrderIdComboBoxOnAction" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtOrderDate" layoutX="758.0" layoutY="130.0" mouseTransparent="true" prefHeight="28.0" prefWidth="157.0" promptText="Date" style="-fx-border-width: 0px 0px 1px 0px; -fx-background-color: White; -fx-border-color: Black;">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+    </children>
+</AnchorPane>

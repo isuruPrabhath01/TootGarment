@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AdminDashbordPage" prefHeight="600.0" prefWidth="1060.0" style="-fx-background-color: 0;" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.tootGarment.controller.AdminDashbordPageFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0099ff" height="600.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="260.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#95afc0" height="125.0" layoutX="278.0" layoutY="164.0" stroke="#141414" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="0.0" width="250.0">
+         <effect>
+            <Shadow blurType="GAUSSIAN" height="2.5" radius="0.125" width="0.0">
+               <color>
+                  <Color red="0.5843137502670288" green="0.686274528503418" blue="0.7529411911964417" />
+               </color>
+            </Shadow>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#95afc0" height="125.0" layoutX="539.0" layoutY="165.0" stroke="#141414" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="0.0" width="250.0">
+         <effect>
+            <Shadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0">
+               <color>
+                  <Color red="0.5843137502670288" green="0.686274528503418" blue="0.7529411911964417" />
+               </color>
+            </Shadow>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#95afc0" height="125.0" layoutX="800.0" layoutY="165.0" stroke="#141414" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="0.0" width="250.0">
+         <effect>
+            <Shadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0">
+               <color>
+                  <Color red="0.5843137502670288" green="0.686274528503418" blue="0.7529411911964417" />
+               </color>
+            </Shadow>
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#95afc0" height="125.0" layoutX="278.0" layoutY="299.0" stroke="#141414" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="0.0" width="250.0">
+         <effect>
+            <Shadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0">
+               <color>
+                  <Color red="0.5843137502670288" green="0.686274528503418" blue="0.7529411911964417" />
+               </color>
+            </Shadow>
+         </effect>
+      </Rectangle>
+      <VBox layoutY="174.0" prefHeight="250.0" prefWidth="260.0" style="-fx-background-color: #0099FF;" stylesheets="@../css/Style.css">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#StaffAddPageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Staff" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/management.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#UserAddPageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Users" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/6330650_account_and_person_personal_profile_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#AttendanceStaffAddPageOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Staff Attendance" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="Assets" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/fixed-asset.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="50.0" onAction="#LogOutOnAction" prefHeight="50.0" prefWidth="260.0" style="-fx-background-radius: 80 0 0 80;" text="LogOut" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/7351030_lock_logout_exit_security_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Text layoutX="291.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders On Hand" textAlignment="CENTER" wrappingWidth="224.13671875">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.23993359506130219" green="0.051839668303728104" blue="0.30263158679008484" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.35054837125552457">
+                     <color>
+                        <Color red="0.5911458134651184" green="0.1145833358168602" blue="0.75" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.681208053691275">
+                     <color>
+                        <Color red="0.28255361318588257" green="0.11878655105829239" blue="0.34210526943206787" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.996951219512195">
+                     <color>
+                        <Color red="0.46052631735801697" green="0.09381091594696045" blue="0.19771361351013184" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="552.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finish Orders" textAlignment="CENTER" wrappingWidth="224.13671875">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.23993359506130219" green="0.051839668303728104" blue="0.30263158679008484" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.35054837125552457">
+                     <color>
+                        <Color red="0.5911458134651184" green="0.1145833358168602" blue="0.75" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.681208053691275">
+                     <color>
+                        <Color red="0.28255361318588257" green="0.11878655105829239" blue="0.34210526943206787" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.996951219512195">
+                     <color>
+                        <Color red="0.46052631735801697" green="0.09381091594696045" blue="0.19771361351013184" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="813.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Income In This Month " textAlignment="CENTER" wrappingWidth="224.13671875">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.23993359506130219" green="0.051839668303728104" blue="0.30263158679008484" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.35054837125552457">
+                     <color>
+                        <Color red="0.5911458134651184" green="0.1145833358168602" blue="0.75" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.681208053691275">
+                     <color>
+                        <Color red="0.28255361318588257" green="0.11878655105829239" blue="0.34210526943206787" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.996951219512195">
+                     <color>
+                        <Color red="0.46052631735801697" green="0.09381091594696045" blue="0.19771361351013184" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text layoutX="291.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Value" textAlignment="CENTER" wrappingWidth="224.13671875">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.23993359506130219" green="0.051839668303728104" blue="0.30263158679008484" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.35054837125552457">
+                     <color>
+                        <Color red="0.5911458134651184" green="0.1145833358168602" blue="0.75" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.681208053691275">
+                     <color>
+                        <Color red="0.28255361318588257" green="0.11878655105829239" blue="0.34210526943206787" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.996951219512195">
+                     <color>
+                        <Color red="0.46052631735801697" green="0.09381091594696045" blue="0.19771361351013184" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>
